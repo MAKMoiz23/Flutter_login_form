@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const URL = 'mongodb+srv://moiz:moiz123@cluster0.x6tpm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const URL = 'mongodb+srv://<user>:<password>@cluster0.x6tpm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const fUser = require('./model/user.js')
 
 const app = express()
