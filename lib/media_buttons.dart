@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sign_button/sign_button.dart';
+import './SignUp.dart';
 
 class MediaButtons extends StatefulWidget {
   const MediaButtons({Key? key}) : super(key: key);
@@ -18,7 +19,8 @@ class _MediaButtonsState extends State<MediaButtons> {
               style: TextStyle(
                   decoration: TextDecoration.underline, color: Colors.blue)),
           onTap: () {
-            // do what you need to do when "Click here" gets clicked
+            Navigator.push(context, MaterialPageRoute(
+              builder: (context) => SignUp()));
         }),
         SizedBox(height: 20,),
 
